@@ -1,0 +1,195 @@
+ ::selection {
+ 	background: white; /* WebKit/Blink Browsers */ 
+ }
+
+body {
+	background-color: #fff;
+	/*
+	font-family: 'Quicksand', sans-serif;
+	font-family: 'Slabo 27px', serif;
+    font-family: 'Source Sans Pro', sans-serif;
+    */
+}
+
+h1 {
+	font-family: 'Quicksand', sans-serif;
+	color: #4d4d4d;
+	display:inline-block;
+	border-bottom: 2px solid;
+	margin-bottom: 1rem;
+	/* font-size: 2rem; */
+}
+
+#personal > h1 {
+	border-color: #ABE4FF;
+}
+
+#work > h1 {
+	border-color: #aafc99; /* #DDFFAB */
+}
+
+#fun > h1 {
+	border-color: #FFABAB;
+}
+
+#today > h1 {
+	border-color: #D9ABFF;
+}
+
+#later > h1 {
+	border-color: #FFDAAB;
+}
+
+ul {
+	font-family: 'Montserrat', sans-serif;
+	margin-top: 10px;
+}
+
+input {
+	width: 100%;
+	outline: none;
+	font-family: 'Montserrat', sans-serif;
+	margin-top: 10px;
+	padding-left: 15px;
+}
+
+span {
+	padding-left: 15px;
+
+	white-space: pre-wrap;
+	word-break: break-all;
+	hyphens: auto;
+
+	display: inline-block;
+	width: calc(100% - 60px);
+	pointer-events: none;
+	border-left: 2px solid; /* or list item? */
+
+	padding-top: 2px;
+	padding-bottom: 2px;
+}
+
+#personal span {
+	border-color: #ABE4FF;
+}
+
+#work span {
+	border-color: #aafc99;
+}
+
+#fun span {
+	border-color: #FFABAB;
+}
+
+#today span {
+	border-color: #D9ABFF;
+}
+
+#later span {
+	border-color: #FFDAAB;
+}
+
+button {
+	border-radius: 50%;
+	border: none;
+	text-align: center;
+	text-decoration: none;
+	font-size: 10px;
+	color: #ffffff;
+	width: 20px;
+	height: 20px;
+}
+
+/*
+#personal {
+	background-color: #f2f8ff;
+}
+
+#work {
+	background-color: #f4fff2;
+}
+
+#fun {
+	background-color: #fff2f9;
+}
+
+#tola {
+	background-color: #f2fffc;
+}
+*/
+
+.list-group-item {
+	border: 0;
+	padding: 0;
+	background-color: #fff;
+}
+
+.list-group-item:hover:not(.blankItem) {
+	background-color: #f5f5f5;
+}
+
+#personal .selected {
+	background-color: #ABE4FF;
+}
+
+#work .selected {
+	background-color: #aafc99;
+}
+
+#fun .selected {
+	background-color: #FFABAB;
+}
+
+#today .selected {
+	background-color: #D9ABFF;
+}
+
+#later .selected {
+	background-color: #FFDAAB;
+}
+
+.selected > .moveTarget {
+	pointer-events: none;
+}
+
+#itemMenu {
+	display: inline-block;
+	float: right;
+	margin-right: 5px;
+}
+
+.moveTarget {
+	height: 10px;
+	background-color: #fff;
+	/* display: none; */
+	display: block;
+	pointer-events: none;
+}
+
+#personal .moveTarget:hover {
+	background-color: #ABE4FF;
+}
+
+#work .moveTarget:hover {
+	background-color: #aafc99;
+}
+
+#fun .moveTarget:hover {
+	background-color: #FFABAB;
+}
+
+#today .moveTarget:hover {
+	background-color: #D9ABFF;
+}
+
+#later .moveTarget:hover {
+	background-color: #FFDAAB;
+}
+
+.activeTarget > li:hover:not(.selected) > .moveTarget {
+	pointer-events: auto;
+}
+
+.blankItem {
+	height: 10px;
+}

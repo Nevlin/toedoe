@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- Bootstrap -->
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <!-- 
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet"> 
+    -->
+  
+    <title>Toedoe</title>
+
+  </head>
+  <body>
+
+    <div class="container-fluid">
+      <!-- <div class="row" id="top-bar">Top-Bar</div> -->
+      <div class="row" id="row-lists">
+
+        <div id="personal" class="col-sm">
+
+          <h1>Personal</h1>
+          <input type="text">
+          <ul class="list-group">
+          </ul>
+        </div>
+
+        <div id="work" class="col-sm">
+
+          <h1>Work</h1>
+          <input type="text">
+          <ul class="list-group">
+          </ul>
+        </div>
+
+        <div id="fun" class="col-sm">
+
+          <h1>Fun</h1>
+          <input type="text">
+          <ul class="list-group" id="fun">
+          </ul>
+        </div>
+
+        <div id="tola" class="col-sm">
+
+          <div id="today">
+
+            <h1>Today</h1>
+            <input type="text">
+            <ul class="list-group" id="today">
+            </ul>
+          </div>
+
+          <div id="later">
+
+            <h1>Later</h1>
+            <input type="text">
+            <ul class="list-group" id="later">
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <div id="itemMenu" style="display:none;">
+      <button type="button" id="deleteMenu">X</button>
+      <button type="button" id="editMenu">✎</button>
+    </div>
+    <input type="text" id="editItem" style="display: none;">
+
+    <script src="index.js"></script>
+    <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+    <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+    <script> window.$ = window.jQuery = require('jquery'); // Bugfix</script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+  </body>
+</html>
+
+<!-- All of the Node.js APIs are available in this renderer process.
+
+We are using Node.js <script>document.write(process.versions.node)</script>,
+Chromium <script>document.write(process.versions.chrome)</script>,
+and Electron <script>document.write(process.versions.electron)</script>.
+
+<script>
+  // You can also require other files to run in this process
+  require('./renderer.js')
+</script>
+
+-->
