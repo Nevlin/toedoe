@@ -393,11 +393,3 @@ function saveData() {
 }
 
 // Show Error in Top bar function
-
-
-
-
-
-
-
-
